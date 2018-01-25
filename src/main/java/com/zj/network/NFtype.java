@@ -1,21 +1,30 @@
 package com.zj.network;
 
 public enum NFtype {
-	NF1(0,6),NF2(1,4),NF3(2,3),NF4(3,6);
+	NF1(0, "Firewall", 6), NF2(1, "IDS", 4), NF3(2, "Proxy", 3),
+	NF4(3, "NAT", 4), NF5(4, "LB", 5), NF6(5, "FM", 6);
+	
 
 	private int _index;
+	
+	private String _name;
 
 	private float _NFcapacity;
 
-	private NFtype(int _index, int _NFcapacity) {
+	private NFtype(int _index, String _name, int _NFcapacity) {
 		this._index = _index;
+		this._name = _name;
 		this._NFcapacity = _NFcapacity;
 	}
 
 	public int getIndex() {
 		return _index;
 	}
-
+	
+	public String getName() {
+		return _name;
+	}
+ 
 
 	public float getNFcapacity() {
 		return _NFcapacity;
@@ -31,6 +40,10 @@ public enum NFtype {
 			return NF3;
 		case 3:
 			return NF4;
+		case 4:
+			return NF5;
+		case 5:
+			return NF6;
 		}
 		throw new IllegalStateException(
                 "this NFtype is non-existent! " + index);

@@ -16,9 +16,10 @@ public class App
 	//static String path = "C:\\Users\\PC\\Desktop\\data\\case\\case2-6-5-4.json";
 	//static String path = "C:\\Users\\PC\\opl\\minlink\\result_minlink.json";
 	//static String path = "C:\\Users\\PC\\Desktop\\data\\uncut\\ram93-d-2-70.json";
-	//static String path = "C:\\Users\\PC\\Desktop\\data\\pdh\\new\\pdh24-int-d-2-un.json";
-	//static String path = "C:\\Users\\PC\\Desktop\\data\\pdh\\new4\\pdh18-int-t-27-6-4-3.json";
-	static String path = "C:\\Users\\PC\\Desktop\\data\\pdh\\new4\\h-pdh18-int.json";
+	static String path = "C:\\Users\\PC\\Desktop\\data\\newyork\\new56-1-t-1000-6-4-3.json";
+	//static String path = "C:\\Users\\PC\\Desktop\\data\\pdh\\new4\\pdh18-int-t-30-6-4-3.json";
+	//static String path = "C:\\Users\\PC\\Desktop\\data\\pdh\\new4\\h-pdh18-int.json";
+	//static String path = "C:\\Users\\PC\\Desktop\\data\\newyork\\h-new-56-1.json";
 	
 	public static void main( String[] args )
     {
@@ -29,12 +30,12 @@ public class App
     	*/
 		long startTime = System.currentTimeMillis();    //获取开始时间
 
-		//new JsonParser().loadOplJsonData(path);
-    	new JsonParser().loadHeuJsonData(path);
+		new JsonParser().loadOplJsonData(path);
+    	//new JsonParser().loadHeuJsonData(path);
 
 		long endTime = System.currentTimeMillis();    //获取结束时间
 
-		System.out.println("程序运行时间：" + (endTime - startTime) + "ms");    //输出程序运行时间
+		System.out.println("\n程序运行时间：" + (endTime - startTime) + "ms");    //输出程序运行时间
 
     	
 

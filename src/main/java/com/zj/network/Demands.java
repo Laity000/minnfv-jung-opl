@@ -8,8 +8,9 @@ import java.util.LinkedHashMap;
 
 public class Demands {
 
-	public static final int DEFAULT_DELAYRATE = 2;
+	public static final float DEFAULT_DELAYRATE = 5;
 
+	//public static final float DEFAULT_DELAY = 5;
 	/*
 	 * 需求集合名称
 	 */
@@ -22,12 +23,23 @@ public class Demands {
 	/*
 	 * 最大时延比
 	 */
-	private int _maxDelayRate;
+	private float _maxDelayRate;
+	/*
+	 * 最大时延
+	 */
+	private int _maxDelay;
 
 
 
 	public Demands(String _name) {
 		this("Dems-noName", DEFAULT_DELAYRATE);
+	}
+
+	public Demands(String _name, float _maxDelayRate) {
+		checkNotNull(_name, "demands_name not is null.");
+		setMaxDelayRate(_maxDelayRate);
+		this._name = _name;
+		_demands = new LinkedHashMap<Integer, Demand>();
 	}
 
 	public Demands(String _name, int _maxDelay) {
@@ -43,13 +55,22 @@ public class Demands {
 
 
 
-	public int getMaxDelayRate() {
+	public float getMaxDelayRate() {
 		return _maxDelayRate;
 	}
 
-	public void setMaxDelayRate(int _maxDelayRate) {
+	public void setMaxDelayRate(float _maxDelayRate) {
 		checkArgument(_maxDelayRate >= 1, "dems_maxDelayRate must >= 1.0!", _maxDelayRate);
 		this._maxDelayRate = _maxDelayRate;
+	}
+
+	public int getMaxDelay() {
+		return _maxDelay;
+	}
+
+	public void setMaxDelay(int _maxDelay) {
+		checkArgument(_maxDelay >= 1, "dems_maxDelay must >= 1!", _maxDelay);
+		this._maxDelay = _maxDelay;
 	}
 
 	/**

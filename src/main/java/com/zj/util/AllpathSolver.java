@@ -10,10 +10,14 @@ import com.zj.network.Topology;
 public class AllpathSolver {
 
 
-	public static int[][] getAllpath(Topology topology, Node srcNode, Node destNode, int maxDelayRate){
+	public static int[][] getAllpath(Topology topology, Node srcNode, Node destNode, float maxDelayRate){
 
 
 		int maxLength =(int) Math.ceil(maxDelayRate * ShortedpathSolver.getPathLength(topology, srcNode, destNode, true));
+
+		if(maxLength > 10) {
+			maxLength = 10;
+		}
 
 		boolean visited[] = new boolean[topology.nodesCount()];
 		Stack<Node> stack = new Stack<Node>();

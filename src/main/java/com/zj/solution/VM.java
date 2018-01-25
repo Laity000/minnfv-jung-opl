@@ -12,7 +12,7 @@ import com.zj.solution.Flow.NFentry;
 
 public class VM {
 
-	static final int DEFAULT_SFSIZE = 30;
+	static final int DEFAULT_SFSIZE = 50;
 	//static final float DEFAULT_SFCAPACITY =13;
 
 	/*
