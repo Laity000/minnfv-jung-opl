@@ -13,10 +13,13 @@ public class AllpathSolver {
 	public static int[][] getAllpath(Topology topology, Node srcNode, Node destNode, float maxDelayRate){
 
 
-		int maxLength =(int) Math.ceil(maxDelayRate * ShortedpathSolver.getPathLength(topology, srcNode, destNode, true));
-
-		if(maxLength > 10) {
-			maxLength = 10;
+		//int maxLength =(int) Math.ceil(maxDelayRate * ShortedpathSolver.getPathLength(topology, srcNode, destNode, true));
+		//int maxLength = maxDelayRate
+		//int maxLength =(int) Math.ceil(maxDelayRate * ShortedpathSolver.getPathLength(topology, srcNode, destNode, true));
+        int maxLength = (int) (maxDelayRate * ShortedpathSolver.getPathLength(topology, srcNode, destNode, true));
+		//int maxLength = (int) (maxDelayRate + ShortedpathSolver.getPathLength(topology, srcNode, destNode, true));
+		if(maxLength > 8) {
+			maxLength = 8;
 		}
 
 		boolean visited[] = new boolean[topology.nodesCount()];

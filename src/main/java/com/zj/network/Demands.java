@@ -60,7 +60,7 @@ public class Demands {
 	}
 
 	public void setMaxDelayRate(float _maxDelayRate) {
-		checkArgument(_maxDelayRate >= 1, "dems_maxDelayRate must >= 1.0!", _maxDelayRate);
+		checkArgument(_maxDelayRate >= 0, "dems_maxDelayRate must >= 0.0!", _maxDelayRate);
 		this._maxDelayRate = _maxDelayRate;
 	}
 
