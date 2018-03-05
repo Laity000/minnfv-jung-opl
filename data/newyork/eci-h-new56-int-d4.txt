@@ -1,0 +1,81 @@
+VM [_nodeid=0 _sum=5个, _SFs=NF2: (1.5个)6.0Mpb, _F:{6,7,8,9,47,54,}  NF3: (1.6666666个)5.0Mpb, _F:{8,9,10,47,53,}  NF1: (0.33333334个)2.0Mpb, _F:{55,56,}  ]
+VM [_nodeid=1 _sum=5个, _SFs=NF1: (1.0个)6.0Mpb, _F:{1,2,3,4,5,6,}  NF2: (1.25个)5.0Mpb, _F:{1,2,3,4,5,}  NF3: (1.3333334个)4.0Mpb, _F:{1,2,3,4,}  ]
+VM [_nodeid=2, _SFs is null
+VM [_nodeid=3 _sum=5个, _SFs=NF1: (1.0个)6.0Mpb, _F:{37,38,39,40,41,42,}  NF2: (1.5个)6.0Mpb, _F:{37,38,39,40,41,42,}  NF3: (1.3333334个)4.0Mpb, _F:{39,40,41,48,}  ]
+VM [_nodeid=4 _sum=3个, _SFs=NF1: (1.0个)6.0Mpb, _F:{7,8,9,10,11,12,}  NF2: (1.0个)4.0Mpb, _F:{10,11,12,13,}  NF3: (1.0个)3.0Mpb, _F:{11,12,13,}  ]
+VM [_nodeid=5 _sum=5个, _SFs=NF3: (2.3333333个)7.0Mpb, _F:{5,6,7,43,44,45,46,}  NF1: (1.0个)6.0Mpb, _F:{43,44,45,46,47,48,}  NF2: (1.0个)4.0Mpb, _F:{43,44,45,46,}  ]
+VM [_nodeid=6 _sum=5个, _SFs=NF3: (2.6666667个)8.0Mpb, _F:{18,19,20,28,29,30,31,42,}  NF2: (1.25个)5.0Mpb, _F:{28,29,30,31,48,}  ]
+VM [_nodeid=7 _sum=5个, _SFs=NF1: (1.0个)6.0Mpb, _F:{49,50,51,52,53,54,}  NF2: (1.25个)5.0Mpb, _F:{49,50,51,52,53,}  NF3: (1.3333334个)4.0Mpb, _F:{49,50,51,52,}  ]
+VM [_nodeid=8, _SFs is null
+VM [_nodeid=9 _sum=5个, _SFs=NF1: (1.0个)6.0Mpb, _F:{31,32,33,34,35,36,}  NF2: (1.25个)5.0Mpb, _F:{32,33,34,35,36,}  NF3: (1.3333334个)4.0Mpb, _F:{32,33,34,35,}  ]
+VM [_nodeid=10, _SFs is null
+VM [_nodeid=11 _sum=5个, _SFs=NF1: (1.0个)6.0Mpb, _F:{13,14,15,16,17,18,}  NF2: (1.25个)5.0Mpb, _F:{14,15,16,17,18,}  NF3: (1.3333334个)4.0Mpb, _F:{14,15,16,17,}  ]
+VM [_nodeid=12 _sum=3个, _SFs=NF1: (1.0个)6.0Mpb, _F:{19,20,21,22,29,30,}  NF2: (1.0个)4.0Mpb, _F:{19,20,21,22,}  NF3: (1.0个)3.0Mpb, _F:{21,22,23,}  ]
+VM [_nodeid=13 _sum=5个, _SFs=NF1: (1.0个)6.0Mpb, _F:{23,24,25,26,27,28,}  NF2: (1.25个)5.0Mpb, _F:{23,24,25,26,27,}  NF3: (1.3333334个)4.0Mpb, _F:{24,25,26,27,}  ]
+VM [_nodeid=14 _sum=3个, _SFs=NF3: (2.0个)6.0Mpb, _F:{36,37,38,54,55,56,}  NF2: (0.5个)2.0Mpb, _F:{55,56,}  ]
+VM [_nodeid=15, _SFs is null
+Flow [_id=1, _src/dest=1/11, _spLen=1, cpLen=1], _NFC={ NF[_name=NF1, node=1, NFordinal=1] NF[_name=NF2, node=1, NFordinal=2] NF[_name=NF3, node=1, NFordinal=3]}
+Flow [_id=2, _src/dest=1/12, _spLen=1, cpLen=1], _NFC={ NF[_name=NF1, node=1, NFordinal=1] NF[_name=NF2, node=1, NFordinal=2] NF[_name=NF3, node=1, NFordinal=3]}
+Flow [_id=3, _src/dest=1/13, _spLen=2, cpLen=2], _NFC={ NF[_name=NF1, node=1, NFordinal=1] NF[_name=NF2, node=1, NFordinal=2] NF[_name=NF3, node=1, NFordinal=3]}
+Flow [_id=4, _src/dest=1/9, _spLen=2, cpLen=2], _NFC={ NF[_name=NF1, node=1, NFordinal=1] NF[_name=NF2, node=1, NFordinal=2] NF[_name=NF3, node=1, NFordinal=3]}
+Flow [_id=5, _src/dest=1/10, _spLen=3, cpLen=3], _NFC={ NF[_name=NF1, node=1, NFordinal=1] NF[_name=NF2, node=1, NFordinal=2] NF[_name=NF3, node=5, NFordinal=3]}
+Flow [_id=6, _src/dest=1/2, _spLen=2, cpLen=3], _NFC={ NF[_name=NF1, node=1, NFordinal=1] NF[_name=NF2, node=0, NFordinal=2] NF[_name=NF3, node=5, NFordinal=3]}
+Flow [_id=7, _src/dest=1/5, _spLen=1, cpLen=3], _NFC={ NF[_name=NF1, node=4, NFordinal=1] NF[_name=NF2, node=0, NFordinal=2] NF[_name=NF3, node=5, NFordinal=3]}
+Flow [_id=8, _src/dest=11/1, _spLen=1, cpLen=3], _NFC={ NF[_name=NF1, node=4, NFordinal=1] NF[_name=NF2, node=0, NFordinal=2] NF[_name=NF3, node=0, NFordinal=3]}
+Flow [_id=9, _src/dest=11/12, _spLen=1, cpLen=3], _NFC={ NF[_name=NF1, node=4, NFordinal=1] NF[_name=NF2, node=0, NFordinal=2] NF[_name=NF3, node=0, NFordinal=3]}
+Flow [_id=10, _src/dest=11/13, _spLen=2, cpLen=4], _NFC={ NF[_name=NF1, node=4, NFordinal=1] NF[_name=NF2, node=4, NFordinal=2] NF[_name=NF3, node=0, NFordinal=3]}
+Flow [_id=11, _src/dest=11/9, _spLen=2, cpLen=3], _NFC={ NF[_name=NF1, node=4, NFordinal=1] NF[_name=NF2, node=4, NFordinal=2] NF[_name=NF3, node=4, NFordinal=3]}
+Flow [_id=12, _src/dest=11/10, _spLen=3, cpLen=4], _NFC={ NF[_name=NF1, node=4, NFordinal=1] NF[_name=NF2, node=4, NFordinal=2] NF[_name=NF3, node=4, NFordinal=3]}
+Flow [_id=13, _src/dest=11/2, _spLen=2, cpLen=4], _NFC={ NF[_name=NF1, node=11, NFordinal=1] NF[_name=NF2, node=4, NFordinal=2] NF[_name=NF3, node=4, NFordinal=3]}
+Flow [_id=14, _src/dest=11/5, _spLen=2, cpLen=2], _NFC={ NF[_name=NF1, node=11, NFordinal=1] NF[_name=NF2, node=11, NFordinal=2] NF[_name=NF3, node=11, NFordinal=3]}
+Flow [_id=15, _src/dest=12/1, _spLen=1, cpLen=2], _NFC={ NF[_name=NF1, node=11, NFordinal=1] NF[_name=NF2, node=11, NFordinal=2] NF[_name=NF3, node=11, NFordinal=3]}
+Flow [_id=16, _src/dest=12/11, _spLen=1, cpLen=1], _NFC={ NF[_name=NF1, node=11, NFordinal=1] NF[_name=NF2, node=11, NFordinal=2] NF[_name=NF3, node=11, NFordinal=3]}
+Flow [_id=17, _src/dest=12/13, _spLen=1, cpLen=3], _NFC={ NF[_name=NF1, node=11, NFordinal=1] NF[_name=NF2, node=11, NFordinal=2] NF[_name=NF3, node=11, NFordinal=3]}
+Flow [_id=18, _src/dest=12/9, _spLen=2, cpLen=3], _NFC={ NF[_name=NF1, node=11, NFordinal=1] NF[_name=NF2, node=11, NFordinal=2] NF[_name=NF3, node=6, NFordinal=3]}
+Flow [_id=19, _src/dest=12/10, _spLen=3, cpLen=3], _NFC={ NF[_name=NF1, node=12, NFordinal=1] NF[_name=NF2, node=12, NFordinal=2] NF[_name=NF3, node=6, NFordinal=3]}
+Flow [_id=20, _src/dest=12/2, _spLen=2, cpLen=2], _NFC={ NF[_name=NF1, node=12, NFordinal=1] NF[_name=NF2, node=12, NFordinal=2] NF[_name=NF3, node=6, NFordinal=3]}
+Flow [_id=21, _src/dest=12/5, _spLen=2, cpLen=2], _NFC={ NF[_name=NF1, node=12, NFordinal=1] NF[_name=NF2, node=12, NFordinal=2] NF[_name=NF3, node=12, NFordinal=3]}
+Flow [_id=22, _src/dest=13/1, _spLen=2, cpLen=2], _NFC={ NF[_name=NF1, node=12, NFordinal=1] NF[_name=NF2, node=12, NFordinal=2] NF[_name=NF3, node=12, NFordinal=3]}
+Flow [_id=23, _src/dest=13/11, _spLen=2, cpLen=2], _NFC={ NF[_name=NF1, node=13, NFordinal=1] NF[_name=NF2, node=13, NFordinal=2] NF[_name=NF3, node=12, NFordinal=3]}
+Flow [_id=24, _src/dest=13/12, _spLen=1, cpLen=1], _NFC={ NF[_name=NF1, node=13, NFordinal=1] NF[_name=NF2, node=13, NFordinal=2] NF[_name=NF3, node=13, NFordinal=3]}
+Flow [_id=25, _src/dest=13/9, _spLen=1, cpLen=1], _NFC={ NF[_name=NF1, node=13, NFordinal=1] NF[_name=NF2, node=13, NFordinal=2] NF[_name=NF3, node=13, NFordinal=3]}
+Flow [_id=26, _src/dest=13/10, _spLen=2, cpLen=2], _NFC={ NF[_name=NF1, node=13, NFordinal=1] NF[_name=NF2, node=13, NFordinal=2] NF[_name=NF3, node=13, NFordinal=3]}
+Flow [_id=27, _src/dest=13/2, _spLen=2, cpLen=2], _NFC={ NF[_name=NF1, node=13, NFordinal=1] NF[_name=NF2, node=13, NFordinal=2] NF[_name=NF3, node=13, NFordinal=3]}
+Flow [_id=28, _src/dest=13/5, _spLen=2, cpLen=2], _NFC={ NF[_name=NF1, node=13, NFordinal=1] NF[_name=NF2, node=6, NFordinal=2] NF[_name=NF3, node=6, NFordinal=3]}
+Flow [_id=29, _src/dest=9/1, _spLen=2, cpLen=5], _NFC={ NF[_name=NF1, node=12, NFordinal=1] NF[_name=NF2, node=6, NFordinal=2] NF[_name=NF3, node=6, NFordinal=3]}
+Flow [_id=30, _src/dest=9/11, _spLen=2, cpLen=4], _NFC={ NF[_name=NF1, node=12, NFordinal=1] NF[_name=NF2, node=6, NFordinal=2] NF[_name=NF3, node=6, NFordinal=3]}
+Flow [_id=31, _src/dest=9/12, _spLen=2, cpLen=2], _NFC={ NF[_name=NF1, node=9, NFordinal=1] NF[_name=NF2, node=6, NFordinal=2] NF[_name=NF3, node=6, NFordinal=3]}
+Flow [_id=32, _src/dest=9/13, _spLen=1, cpLen=1], _NFC={ NF[_name=NF1, node=9, NFordinal=1] NF[_name=NF2, node=9, NFordinal=2] NF[_name=NF3, node=9, NFordinal=3]}
+Flow [_id=33, _src/dest=9/10, _spLen=1, cpLen=1], _NFC={ NF[_name=NF1, node=9, NFordinal=1] NF[_name=NF2, node=9, NFordinal=2] NF[_name=NF3, node=9, NFordinal=3]}
+Flow [_id=34, _src/dest=9/2, _spLen=2, cpLen=2], _NFC={ NF[_name=NF1, node=9, NFordinal=1] NF[_name=NF2, node=9, NFordinal=2] NF[_name=NF3, node=9, NFordinal=3]}
+Flow [_id=35, _src/dest=9/5, _spLen=2, cpLen=2], _NFC={ NF[_name=NF1, node=9, NFordinal=1] NF[_name=NF2, node=9, NFordinal=2] NF[_name=NF3, node=9, NFordinal=3]}
+Flow [_id=36, _src/dest=10/1, _spLen=3, cpLen=3], _NFC={ NF[_name=NF1, node=9, NFordinal=1] NF[_name=NF2, node=9, NFordinal=2] NF[_name=NF3, node=14, NFordinal=3]}
+Flow [_id=37, _src/dest=10/11, _spLen=3, cpLen=4], _NFC={ NF[_name=NF1, node=3, NFordinal=1] NF[_name=NF2, node=3, NFordinal=2] NF[_name=NF3, node=14, NFordinal=3]}
+Flow [_id=38, _src/dest=10/12, _spLen=3, cpLen=4], _NFC={ NF[_name=NF1, node=3, NFordinal=1] NF[_name=NF2, node=3, NFordinal=2] NF[_name=NF3, node=14, NFordinal=3]}
+Flow [_id=39, _src/dest=10/13, _spLen=2, cpLen=3], _NFC={ NF[_name=NF1, node=3, NFordinal=1] NF[_name=NF2, node=3, NFordinal=2] NF[_name=NF3, node=3, NFordinal=3]}
+Flow [_id=40, _src/dest=10/9, _spLen=1, cpLen=2], _NFC={ NF[_name=NF1, node=3, NFordinal=1] NF[_name=NF2, node=3, NFordinal=2] NF[_name=NF3, node=3, NFordinal=3]}
+Flow [_id=41, _src/dest=10/2, _spLen=1, cpLen=3], _NFC={ NF[_name=NF1, node=3, NFordinal=1] NF[_name=NF2, node=3, NFordinal=2] NF[_name=NF3, node=3, NFordinal=3]}
+Flow [_id=42, _src/dest=10/5, _spLen=2, cpLen=3], _NFC={ NF[_name=NF1, node=3, NFordinal=1] NF[_name=NF2, node=3, NFordinal=2] NF[_name=NF3, node=6, NFordinal=3]}
+Flow [_id=43, _src/dest=2/1, _spLen=2, cpLen=2], _NFC={ NF[_name=NF1, node=5, NFordinal=1] NF[_name=NF2, node=5, NFordinal=2] NF[_name=NF3, node=5, NFordinal=3]}
+Flow [_id=44, _src/dest=2/11, _spLen=2, cpLen=3], _NFC={ NF[_name=NF1, node=5, NFordinal=1] NF[_name=NF2, node=5, NFordinal=2] NF[_name=NF3, node=5, NFordinal=3]}
+Flow [_id=45, _src/dest=2/12, _spLen=2, cpLen=3], _NFC={ NF[_name=NF1, node=5, NFordinal=1] NF[_name=NF2, node=5, NFordinal=2] NF[_name=NF3, node=5, NFordinal=3]}
+Flow [_id=46, _src/dest=2/13, _spLen=2, cpLen=3], _NFC={ NF[_name=NF1, node=5, NFordinal=1] NF[_name=NF2, node=5, NFordinal=2] NF[_name=NF3, node=5, NFordinal=3]}
+Flow [_id=47, _src/dest=2/9, _spLen=2, cpLen=4], _NFC={ NF[_name=NF1, node=5, NFordinal=1] NF[_name=NF2, node=0, NFordinal=2] NF[_name=NF3, node=0, NFordinal=3]}
+Flow [_id=48, _src/dest=2/10, _spLen=1, cpLen=4], _NFC={ NF[_name=NF1, node=5, NFordinal=1] NF[_name=NF2, node=6, NFordinal=2] NF[_name=NF3, node=3, NFordinal=3]}
+Flow [_id=49, _src/dest=2/5, _spLen=1, cpLen=2], _NFC={ NF[_name=NF1, node=7, NFordinal=1] NF[_name=NF2, node=7, NFordinal=2] NF[_name=NF3, node=7, NFordinal=3]}
+Flow [_id=50, _src/dest=5/1, _spLen=1, cpLen=3], _NFC={ NF[_name=NF1, node=7, NFordinal=1] NF[_name=NF2, node=7, NFordinal=2] NF[_name=NF3, node=7, NFordinal=3]}
+Flow [_id=51, _src/dest=5/11, _spLen=2, cpLen=3], _NFC={ NF[_name=NF1, node=7, NFordinal=1] NF[_name=NF2, node=7, NFordinal=2] NF[_name=NF3, node=7, NFordinal=3]}
+Flow [_id=52, _src/dest=5/12, _spLen=2, cpLen=3], _NFC={ NF[_name=NF1, node=7, NFordinal=1] NF[_name=NF2, node=7, NFordinal=2] NF[_name=NF3, node=7, NFordinal=3]}
+Flow [_id=53, _src/dest=5/13, _spLen=2, cpLen=4], _NFC={ NF[_name=NF1, node=7, NFordinal=1] NF[_name=NF2, node=7, NFordinal=2] NF[_name=NF3, node=0, NFordinal=3]}
+Flow [_id=54, _src/dest=5/9, _spLen=2, cpLen=4], _NFC={ NF[_name=NF1, node=7, NFordinal=1] NF[_name=NF2, node=0, NFordinal=2] NF[_name=NF3, node=14, NFordinal=3]}
+Flow [_id=55, _src/dest=5/10, _spLen=2, cpLen=4], _NFC={ NF[_name=NF1, node=0, NFordinal=1] NF[_name=NF2, node=14, NFordinal=2] NF[_name=NF3, node=14, NFordinal=3]}
+Flow [_id=56, _src/dest=5/2, _spLen=1, cpLen=4], _NFC={ NF[_name=NF1, node=0, NFordinal=1] NF[_name=NF2, node=14, NFordinal=2] NF[_name=NF3, node=14, NFordinal=3]}
+
+ NumActivedNodes=12
+
+ NumACtivedVMs=54
+
+ AvgSPLen=1.7857143
+
+ AvgCPLen=2.6964285
+程序运行时间：49114932ms

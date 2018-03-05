@@ -1,0 +1,62 @@
+// Thu Feb 01 15:07:25 CST 2018
+// minnfv run10
+
+CPXPARAM_MIP_Strategy_NodeSelect                 2
+CPXPARAM_MIP_Strategy_CallbackReducedLP          0
+Tried aggregator 2 times.
+MIP Presolve eliminated 319 rows and 19 columns.
+MIP Presolve modified 13711 coefficients.
+Aggregator did 108 substitutions.
+Reduced MIP has 3830 rows, 2582 columns, and 17074 nonzeros.
+Reduced MIP has 1829 binaries, 753 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.03 sec. (24.89 ticks)
+Probing fixed 105 vars, tightened 0 bounds.
+Probing time = 0.00 sec. (1.48 ticks)
+Cover probing fixed 0 vars, tightened 18 bounds.
+Tried aggregator 1 time.
+MIP Presolve eliminated 111 rows and 105 columns.
+MIP Presolve modified 2567 coefficients.
+Reduced MIP has 3719 rows, 2477 columns, and 15932 nonzeros.
+Reduced MIP has 1724 binaries, 753 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.02 sec. (16.13 ticks)
+Probing time = 0.00 sec. (1.22 ticks)
+Clique table members: 1173.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 32 threads.
+Root relaxation solution time = 0.02 sec. (15.39 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0      618.0410   100                    618.0410      331         
+      0     0      618.0410    60                    Cuts: 16      381         
+      0     0      618.0410   115                    Cuts: 70      566         
+      0     0      618.0410   111                    Cuts: 26      659         
+      0     0      618.0410   139                    Cuts: 79      908         
+      0     2      618.0410    62                    618.0410      908         
+Elapsed time = 0.77 sec. (448.66 ticks, tree = 0.01 MB, solutions = 0)
+    585   474      618.0411   123                    618.0410    66913         
+   2091  1570      618.0525    55                    618.0410   136851         
+   3800  2861      618.0414   136                    618.0410   197542         
+   5282  4221      618.0601    56                    618.0410   273325         
+   5493  4982      618.0410    69                    618.0410   313818         
+   5779   163      618.0410    94                    618.0410   321547         
+   6539   796      618.0420    74                    618.0410   376159         
+   7399  1436      618.0511    86                    618.0410   440670         
+   8771  2615      684.7324   126                    618.0410   542036         
+  15451  8336      618.0432   128                    618.0410   868999         
+Elapsed time = 10.73 sec. (4580.12 ticks, tree = 25.15 MB, solutions = 0)
+  21921 13736      651.3850   128                    618.0410  1178205         
+  23232   821      618.0455    96                    618.0410  1328586         
+  26195  2922      618.5792    31                    618.0410  1495548         
+* 26345  3253      integral     0      618.0510      618.0410  1522193    0.00%
+
+Root node processing (before b&c):
+  Real time             =    0.73 sec. (447.26 ticks)
+Parallel b&c, 32 threads:
+  Real time             =   17.50 sec. (7232.22 ticks)
+  Sync time (average)   =    3.69 sec.
+  Wait time (average)   =    0.05 sec.
+                          ------------
+Total (root+branch&cut) =   18.23 sec. (7679.48 ticks)
