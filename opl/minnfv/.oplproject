@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="ASCII"?><project>
+	<version>1.0</version>
+	<configs>
+		<config default="false" name="run1" category="opl">
+			<ref name="minnfv.dat" type="data">
+			</ref>
+			<ref name="setting.ops" type="setting">
+			</ref>
+			<ref name="minnfv-t.mod" type="model">
+			</ref>
+		</config>
+		<config default="false" name="run2" category="opl">
+			<ref name="atlanta/atlanta.dat" type="data">
+			</ref>
+			<ref name="minnfv-t.mod" type="model">
+			</ref>
+		</config>
+		<config default="false" name="run3" category="opl">
+			<ref name="abilene/abilene.dat" type="data">
+			</ref>
+			<ref name="minnfv-t.mod" type="model">
+			</ref>
+		</config>
+		<config default="false" name="run4" category="opl">
+			<ref name="random/random180.dat" type="data">
+			</ref>
+			<ref name="minnfv-t.mod" type="model">
+			</ref>
+		</config>
+		<config default="false" name="run5" category="opl">
+			<ref name="setting.ops" type="setting">
+			</ref>
+			<ref name="random/random93.dat" type="data">
+			</ref>
+			<ref name="minnfv-t.mod" type="model">
+			</ref>
+		</config>
+		<config default="false" name="run6" category="opl">
+			<ref name="setting.ops" type="setting">
+			</ref>
+			<ref name="all54.dat" type="data">
+			</ref>
+			<ref name="minnfv-t.mod" type="model">
+			</ref>
+		</config>
+		<config default="false" name="run7" category="opl">
+			<ref name="pdh/pdh.dat" type="data">
+			</ref>
+			<ref name="setting.ops" type="setting">
+			</ref>
+			<ref name="minnfv-t.mod" type="model">
+			</ref>
+		</config>
+		<config default="false" name="run8" category="opl">
+			<ref name="setting.ops" type="setting">
+			</ref>
+			<ref name="polska/polska.dat" type="data">
+			</ref>
+			<ref name="minnfv-t.mod" type="model">
+			</ref>
+		</config>
+		<config default="false" name="run9" category="opl">
+			<ref name="setting.ops" type="setting">
+			</ref>
+			<ref name="minnfv-t.mod" type="model">
+			</ref>
+			<ref name="pdh/pdh20.dat" type="data">
+			</ref>
+		</config>
+		<config default="true" name="run10" category="opl">
+			<ref name="setting.ops" type="setting">
+			</ref>
+			<ref name="minnfv-t.mod" type="model">
+			</ref>
+			<ref name="pdh/pdh18.dat" type="data">
+			</ref>
+		</config>
+		<config default="false" name="run11" category="opl">
+			<ref name="minnfv-t.mod" type="model">
+			</ref>
+			<ref name="newyork/newyork.dat" type="data">
+			</ref>
+			<ref name="setting.ops" type="setting">
+			</ref>
+		</config>
+		<config default="false" name="run12" category="opl">
+			<ref name="minnfv-t.mod" type="model">
+			</ref>
+			<ref name="india/india.dat" type="data">
+			</ref>
+			<ref name="setting.ops" type="setting">
+			</ref>
+		</config>
+		<config default="false" name="run-d-1" category="opl">
+			<ref name="minnfv-d.mod" type="model">
+			</ref>
+			<ref name="pdh/pdh18-d.dat" type="data">
+			</ref>
+			<ref name="setting.ops" type="setting">
+			</ref>
+		</config>
+	</configs>
+	
+</project>
