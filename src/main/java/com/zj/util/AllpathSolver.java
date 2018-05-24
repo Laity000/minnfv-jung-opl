@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Stack;
 
+import com.zj.main.App;
 import com.zj.network.Node;
 import com.zj.network.Topology;
 
@@ -16,10 +17,10 @@ public class AllpathSolver {
 		//int maxLength =(int) Math.ceil(maxDelayRate * ShortedpathSolver.getPathLength(topology, srcNode, destNode, true));
 		//int maxLength = maxDelayRate
 		//int maxLength =(int) Math.ceil(maxDelayRate * ShortedpathSolver.getPathLength(topology, srcNode, destNode, true));
-        int maxLength = (int) (maxDelayRate * ShortedpathSolver.getPathLength(topology, srcNode, destNode, true));
-		//int maxLength = (int) (maxDelayRate + ShortedpathSolver.getPathLength(topology, srcNode, destNode, true));
-		if(maxLength > 8) {
-			maxLength = 8;
+        //int maxLength = (int) (maxDelayRate * ShortedpathSolver.getPathLength(topology, srcNode, destNode, true));
+		int maxLength = (int) (maxDelayRate + ShortedpathSolver.getPathLength(topology, srcNode, destNode, true));
+		if(maxLength > App.MAX_DELAY) {
+			maxLength = App.MAX_DELAY;
 		}
 
 		boolean visited[] = new boolean[topology.nodesCount()];

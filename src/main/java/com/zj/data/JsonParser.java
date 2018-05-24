@@ -11,6 +11,7 @@ import com.zj.data.JsonBean.JsonFlow;
 import com.zj.data.JsonBean.JsonTempOrdinal;
 import com.zj.draw.JungDrawer;
 import com.zj.draw.JungTransformer;
+import com.zj.ga.GAsolver;
 import com.zj.heuristic.Algorithm;
 import com.zj.heuristic.Algorithm3;
 import com.zj.network.Demand;
@@ -32,6 +33,7 @@ import com.zj.util.AllpathSolver;
  * @author ZhangJing
  *
  */
+
 public class JsonParser {
 
 	public void loadHeuJsonData(String pathname) {
@@ -53,8 +55,9 @@ public class JsonParser {
 
 		//Algorithm.banVMs(topology, new int[]{0,1,2,3,4,5,6,7,8,10});
 
-		//Solution solution =Algorithm.installNFC(topology, demands);
-		Solution solution = Algorithm3.start(topology, demands);
+		Solution solution =Algorithm.installNFC(topology, demands);
+		//Solution solution = Algorithm3.start(topology, demands);
+		//Solution solution = new GAsolver(topology, demands).run();
 		showGraph(topology, solution);
 		printInfo(topology, demands, solution);
 		//
@@ -72,6 +75,51 @@ public class JsonParser {
 
 		}
 		*/
+	}
+	
+	public void loadHeuPlusJsonData(String pathname) {
+		Gson gson = new Gson();
+		JsonReader reader;
+		JsonBean jsonBean = null;
+		try {
+
+			reader = new JsonReader(new FileReader(pathname));
+		    jsonBean = gson.fromJson(reader, JsonBean.class);
+
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+			System.err.println("json文件导入有误！请检查文件地址。");
+		}
+
+		Topology topology = parseTopo(jsonBean);
+		Demands demands = parseDems(jsonBean, topology);
+		
+		Solution solution = Algorithm3.start(topology, demands);
+		
+		showGraph(topology, solution);
+		printInfo(topology, demands, solution);
+	}
+
+	public void loadGAJsonData(String pathname) {
+		Gson gson = new Gson();
+		JsonReader reader;
+		JsonBean jsonBean = null;
+		try {
+
+			reader = new JsonReader(new FileReader(pathname));
+		    jsonBean = gson.fromJson(reader, JsonBean.class);
+
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+			System.err.println("json文件导入有误！请检查文件地址。");
+		}
+
+		Topology topology = parseTopo(jsonBean);
+		Demands demands = parseDems(jsonBean, topology);
+		Solution solution = new GAsolver(topology, demands).run();
+		showGraph(topology, solution);
+		printInfo(topology, demands, solution);
+
 	}
 
 
@@ -125,7 +173,12 @@ public class JsonParser {
 		Topology topology = new Topology("topo_minnfv");
 		//新建节点,从0开始
 		for(int i=0; i<jsonBean.getNumNode(); i++){
-			topology.newNode(i);
+			if(jsonBean.getNodeWeight() == null) {
+				topology.newNode(i);
+			}else {
+				topology.newNode(i, jsonBean.getNodeWeight().get(i));
+			}
+			
 		}
 		//新建链路
 		for(JsonArcs arcs : jsonBean.getArcs()){
@@ -161,7 +214,7 @@ public class JsonParser {
 		/*
 		 * 新建解决方案
 		 */
-		Solution solution = new Solution(soluname);
+		Solution solution = new Solution(soluname, demands.demandsCount());
 		//新建流,添加流的需求信息
 		for(Demand demand : demands.getDemands()){
 			solution.newFlow(demand.getId(), demand.getSrcNoed(),
@@ -237,11 +290,15 @@ public class JsonParser {
 			}
 		}
 
-		System.out.println("\n NumActivedNodes=" + numActivedNodes);
-		System.out.println("\n NumACtivedVMs=" + numACtivedVMs);
+		System.out.println("\nNumActivedNodes=" + numActivedNodes);
+		System.out.println("\nNumActivedVMs=" + numACtivedVMs);
 
-		System.out.println("\n AvgSPLen=" + solution.getAvgSPLen());
-		System.out.println("\n AvgCPLen=" + solution.getAvgCPLen());
+		System.out.println("\nAvgSPLen=" + solution.getAvgSPLen());
+		System.out.println("\nAvgCPLen=" + solution.getAvgCPLen());
+
+		System.out.println("\nActiveEnergy=" + solution.getActiveEnergy() + "W");
+
+		System.out.println("\nFitValue=" + solution.getFitValue());
 	}
 
 

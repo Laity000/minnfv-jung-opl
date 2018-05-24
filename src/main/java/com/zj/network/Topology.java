@@ -190,17 +190,17 @@ public class Topology {
 	/**
 	 * 新建节点并添加到节点集合中
 	 * @param nodeid 节点id
-	 * @param memory 节点内存
+	 * @param weight 节点权重
 	 * @return
 	 */
-	public Node newNode(int nodeid, int memory){
+	public Node newNode(int nodeid, float weight){
 		//checkArgument(nodeid >= 0, "nodeid must >= 0.", nodeid);
-		//checkArgument(memory >0, "node memory > 0.",memory);
+		//checkArgument(weight >0, "node weight > 0.",memory);
 		if(_nodes.containsKey(nodeid)){
 			throw new IllegalStateException(
 	                "this topology already contains a node with id " + nodeid);
 		}
-		Node node = new Node(nodeid);
+		Node node = new Node(nodeid, weight);
 		_nodes.put(nodeid, node);
 		return node;
 	}

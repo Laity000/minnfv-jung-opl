@@ -12,6 +12,8 @@ public class JsonBean {
 	 * Bean
 	 */
 	private int numNodes;
+	
+	private ArrayList<Float> nodeWeight;
 
 	private ArrayList<JsonArcs> arcs;
 
@@ -128,6 +130,14 @@ public class JsonBean {
 
 	public int getNumNode() {
 		return numNodes;
+	}
+	
+	public ArrayList<Float> getNodeWeight() {
+		return nodeWeight;
+	}
+
+	public void setNodeWeight(ArrayList<Float> nodeWeight) {
+		this.nodeWeight = nodeWeight;
 	}
 
 	public ArrayList<JsonArcs> getArcs() {
