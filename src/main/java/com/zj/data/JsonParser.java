@@ -76,7 +76,7 @@ public class JsonParser {
 		}
 		*/
 	}
-	
+
 	public void loadHeuPlusJsonData(String pathname) {
 		Gson gson = new Gson();
 		JsonReader reader;
@@ -93,14 +93,14 @@ public class JsonParser {
 
 		Topology topology = parseTopo(jsonBean);
 		Demands demands = parseDems(jsonBean, topology);
-		
+
 		Solution solution = Algorithm3.start(topology, demands);
-		
+
 		showGraph(topology, solution);
 		printInfo(topology, demands, solution);
 	}
 
-	public void loadGAJsonData(String pathname) {
+	public Solution loadGAJsonData(String pathname) {
 		Gson gson = new Gson();
 		JsonReader reader;
 		JsonBean jsonBean = null;
@@ -119,6 +119,7 @@ public class JsonParser {
 		Solution solution = new GAsolver(topology, demands).run();
 		showGraph(topology, solution);
 		printInfo(topology, demands, solution);
+		return solution;
 
 	}
 
@@ -178,7 +179,7 @@ public class JsonParser {
 			}else {
 				topology.newNode(i, jsonBean.getNodeWeight().get(i));
 			}
-			
+
 		}
 		//新建链路
 		for(JsonArcs arcs : jsonBean.getArcs()){

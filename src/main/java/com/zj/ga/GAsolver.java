@@ -1,5 +1,6 @@
 package com.zj.ga;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
@@ -16,7 +17,7 @@ public class GAsolver {
 
 	private Demands dems;
 
-
+	private int mutationFactor = 0;
 
 
 	public GAsolver(Topology topo, Demands dems) {
@@ -24,6 +25,7 @@ public class GAsolver {
 		this.topo = topo;
 		this.dems = dems;
 	}
+
 
 	public Solution run() {
 		Population<MyVector> population = createInitialPopulation(2);
@@ -107,10 +109,17 @@ public class GAsolver {
 			MyVector result = this.clone();
 
 			/**
-			 * 单点变异
+			 * n点变异
 			 */
-			for (int i = 0; i < 1  ; i++) {
-				int index = random.nextInt(this.vector.length);
+			//初始化
+			ArrayList<Integer> list = new ArrayList<>(this.vector.length);
+			for (int i = 0; i < this.vector.length; i++) {
+				list.add(i);
+			}
+
+			for (int i = 0; i < mutationFactor  ; i++) {
+
+				int index = list.remove(random.nextInt(this.vector.length-i));
 				if (!result.vector[index]) {
 					result.vector[index] = true;
 				}else {
@@ -119,6 +128,7 @@ public class GAsolver {
 			}
 
 			return result;
+
 		}
 
 		/**

@@ -1,5 +1,7 @@
 package com.zj.main;
 
+import java.util.Arrays;
+
 import com.zj.data.JsonParser;
 import com.zj.data.OPLSolver;
 import com.zj.draw.JungDrawer;
@@ -35,12 +37,12 @@ public class App
     	*/
 		long startTime = System.currentTimeMillis();    //获取开始时间
 
-		//new JsonParser().loadGAJsonData(path);
-		new JsonParser().loadOplJsonData(path);
+		new JsonParser().loadGAJsonData(path);
+		//new JsonParser().loadOplJsonData(path);
     	//new JsonParser().loadHeuJsonData(path);
     	//new JsonParser().loadHeuPlusJsonData(path);
-    	
-    	
+
+
 		long endTime = System.currentTimeMillis();    //获取结束时间
 
 		System.out.println("\n程序运行时间：" + (endTime - startTime) + "ms");    //输出程序运行时间
