@@ -129,7 +129,7 @@ public class OPLSolver {
 		String[] splitstr = DATADIR.split("\\\\");
 		String soluname = splitstr[splitstr.length - 1];
 		// System.out.println("Solution " + soluname);
-		Solution solution = new Solution();
+		Solution solution = new Solution(100);
 		printFlow(solution);
 		//printNFC(solution);
 		return solution;

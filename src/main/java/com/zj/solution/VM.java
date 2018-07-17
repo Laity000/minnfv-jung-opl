@@ -6,13 +6,14 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.LinkedHashMap;
 
+import com.zj.main.App;
 import com.zj.network.NFtype;
 import com.zj.network.Node;
 import com.zj.solution.Flow.NFentry;
 
 public class VM {
 
-	static final int DEFAULT_SFSIZE = 50;
+	static final int DEFAULT_SFSIZE = App.VM_CAPACITY;
 	//static final float DEFAULT_SFCAPACITY =13;
 
 	/*
@@ -217,6 +218,17 @@ public class VM {
 		return sum;
 	}
 
+	public double getVMEnergy() {
+
+		//double energy = getVMsum() *  273.5;
+		double energy = getVMsum();
+		if (energy != 0) {
+			//energy += 80.5;
+			energy += 10 * getNode().getWeight();
+		}
+		return energy;
+	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if(!(obj instanceof VM)){
@@ -235,7 +247,7 @@ public class VM {
 			for(SFentry sf : getSFs()){
 				ss += sf.toString();
 			}
-			return "VM [_nodeid=" + _node.getId() + " _sum=" + getVMsum() +  "个"+ ss + "]";
+			return "VM [_nodeid=" + _node.getId() + " _sum=" + getVMsum() + ss + "]";
 		}
 	}
 }

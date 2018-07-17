@@ -9,15 +9,15 @@ public class Node {
 	/*
 	 * 默认最大内存
 	 */
-	static final int COMMOM_MEMORY = 10;
+	static final float DEFAULT_WEIGHT = (float) 1.0;
 	/*
 	 * 节点id
 	 */
 	private int _id;
 	/*
-	 * 节点的最大VM/NF数量
+	 * 节点的权重
 	 */
-	private int _memory;
+	private float _weight;
 	/*
 	 * 节点禁用标志
 	 */
@@ -25,17 +25,17 @@ public class Node {
 
 	//private LinkedHashMap<NFtype, Integer> _VM;
 
-	public Node(int _id, int _memory) {
+	public Node(int _id, float _weight) {
 
 		setId(_id);
-		setMemory(_memory);
+		setWeight(_weight);
 		//_VM = new LinkedHashMap<NFtype, Integer>();
 	}
 
 	public Node(int _id) {
 
 		setId(_id);
-		setMemory(COMMOM_MEMORY);
+		setWeight(DEFAULT_WEIGHT);
 		//_VM = new LinkedHashMap<NFtype, Integer>();
 	}
 
@@ -48,13 +48,13 @@ public class Node {
 		this._id = _id;
 	}
 
-	public int getMemory() {
-		return _memory;
+	public float getWeight() {
+		return _weight;
 	}
 
-	public void setMemory(int _memory) {
-		checkArgument(_memory > 0, "node_memory must > 0.", _memory);
-		this._memory = _memory;
+	public void setWeight(float _weight) {
+		checkArgument(_weight > 0, "node_weight must > 0.", _weight);
+		this._weight = _weight;
 	}
 
 

@@ -3,7 +3,6 @@ package com.zj.heuristic;
 import static com.google.common.base.Preconditions.checkArgument;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map.Entry;
 import com.zj.network.Demand;
@@ -20,8 +19,9 @@ import com.zj.util.AllpathSolver;
 
 public class Algorithm {
 
+
 	public static Solution installNFC(Topology topo, Demands demands) {
-		Solution solu = new Solution("H_Solu");
+		Solution solu = new Solution("H_Solu", demands.demandsCount());
 		createVM(topo, solu);
 		for (Demand dem : demands.getDemands()) {
 			// 路径集根据最短优先级已排序

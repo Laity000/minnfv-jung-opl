@@ -6,9 +6,10 @@ import static com.google.common.base.Preconditions.checkNotNull;
 import java.util.Collection;
 import java.util.LinkedHashMap;
 
+import com.zj.main.App;
+
 public class Demands {
 
-	public static final float DEFAULT_DELAYRATE = 5;
 
 	//public static final float DEFAULT_DELAY = 5;
 	/*
@@ -32,7 +33,7 @@ public class Demands {
 
 
 	public Demands(String _name) {
-		this("Dems-noName", DEFAULT_DELAYRATE);
+		this("Dems-noName", App.DEFAULT_DELAYRATE);
 	}
 
 	public Demands(String _name, float _maxDelayRate) {

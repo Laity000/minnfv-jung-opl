@@ -12,15 +12,20 @@ import com.zj.test.Test1;
 
 public class App
 {
-	//static String path = "C:\\Users\\PC\\Desktop\\result_minnfv.json";
-	static String path = "C:\\Users\\PC\\Desktop\\data\\case\\case-ram.json";
-	//static String path = "C:\\Users\\PC\\opl\\minnfv\\result_minnfv.json";
-	//static String path = "C:\\Users\\PC\\Desktop\\data\\uncut\\ram93-d-2-70.json";
-	//static String path = "C:\\Users\\PC\\Desktop\\data\\newyork\\new56-1-t-1000-6-4-3.json";
-	//static String path = "C:\\Users\\PC\\Desktop\\data\\pdh\\new4\\pdh18-int-t-30-6-4-3.json";
-	//static String path = "C:\\Users\\PC\\Desktop\\data\\pdh\\new4\\h-pdh18-int.json";
-	//static String path = "C:\\Users\\PC\\Desktop\\data\\newyork\\h-new-56-1.json";
-	
+	static String path = "E:\\huangjingkun\\CPLEX\\data\\minnfv\\result_minnfv.json";
+	//static String path = "data\\case\\case-ram.json";
+	//static String path = "data\\india\\h-india-180-1.json";
+	//static String path = "data\\newyork\\h-new-56-1.json";
+	//static String path = "data\\pdh\\h-pdh18-int1.json";
+
+	//static String path = "data\\pdh\\pdh18-int1-t-8-6-4-3.json";
+	//static String path = "data\\pdh-cost-1\\pdh18-int1-t-c-15.json";
+
+
+	public static final int VM_CAPACITY = 4;
+	public static final float DEFAULT_DELAYRATE = 10;
+	public static final int MAX_DELAY = 5;
+
 	public static void main( String[] args )
     {
     	/*
@@ -30,14 +35,15 @@ public class App
     	*/
 		long startTime = System.currentTimeMillis();    //获取开始时间
 
+		//new JsonParser().loadGAJsonData(path);
 		new JsonParser().loadOplJsonData(path);
     	//new JsonParser().loadHeuJsonData(path);
-
+    	//new JsonParser().loadHeuPlusJsonData(path);
+    	
+    	
 		long endTime = System.currentTimeMillis();    //获取结束时间
 
 		System.out.println("\n程序运行时间：" + (endTime - startTime) + "ms");    //输出程序运行时间
-
-    	
 
     }
 }

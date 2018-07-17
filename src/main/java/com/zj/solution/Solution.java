@@ -10,11 +10,15 @@ import com.zj.network.NFtype;
 import com.zj.network.Node;
 import com.zj.solution.Flow.NFentry;
 
-public class Solution {
+public class Solution implements Comparable<Solution>{
 	/*
 	 * 解决方案名称
 	 */
 	private String _name;
+	/*
+	 * 需求数量
+	 */
+	private int _numDems;
 	/*
 	 * 流集合
 	 */
@@ -24,12 +28,13 @@ public class Solution {
 	 */
 	private LinkedHashMap<Integer, VM> _VMs;
 
-	public Solution() {
-		this("Solu-noName");
+	public Solution(int numDems) {
+		this("Solu-noName", numDems);
 	}
 
-	public Solution(String _name) {
+	public Solution(String _name, int numDems) {
 		setName(_name);
+		setNumDems(numDems);
 		_flows = new LinkedHashMap<Integer, Flow>();
 		_VMs = new LinkedHashMap<Integer, VM>();
 	}
@@ -42,6 +47,16 @@ public class Solution {
 		checkNotNull(_name, "solution_name not is null.");
 		this._name = _name;
 	}
+
+	public int getNumDems() {
+		return _numDems;
+	}
+
+	public void setNumDems(int _numDems) {
+		checkArgument(_numDems >= 0, "numDems must >= 0.", _numDems);
+		this._numDems = _numDems;
+	}
+
 	/**
 	 * 得到流集合
 	 * @return
@@ -309,7 +324,32 @@ public class Solution {
 		return sumCPLen/flowsCount();
 	}
 
+	public int getActiveEnergy() {
+		int energy = 0;
+		for (VM vm : getVMs()) {
+			energy +=vm.getVMEnergy();
+		}
+		return energy;
+	}
 
+	public double getFitValue(){
+		if (getFlows().size() != getNumDems()) {
+			return Float.MAX_VALUE;
+		}else {
+			return getActiveEnergy() + 0.1 * getAvgCPLen();
+		}
 
+	}
+
+	public int compareTo(Solution o) {
+		if (this.getFitValue() > o.getFitValue()) {
+			return 1;
+			}else if (this.getFitValue() < o.getFitValue()) {
+				return -1;
+			}else {
+				return 0;
+		}
+
+	}
 
 }
