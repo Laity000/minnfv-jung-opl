@@ -117,7 +117,7 @@ public class GAsolver {
 				list.add(i);
 			}
 
-			for (int i = 0; i < mutationFactor  ; i++) {
+			for (int i = 0; i < mutationFactor; i++) {
 
 				int index = list.remove(random.nextInt(this.vector.length-i));
 				if (!result.vector[index]) {

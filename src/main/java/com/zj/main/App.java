@@ -14,10 +14,10 @@ import com.zj.test.Test1;
 
 public class App
 {
-	static String path = "E:\\huangjingkun\\CPLEX\\data\\minnfv\\result_minnfv.json";
+	//static String path = "E:\\huangjingkun\\CPLEX\\data\\minnfv\\result_minnfv.json";
 	//static String path = "data\\case\\case-ram.json";
 	//static String path = "data\\india\\h-india-180-1.json";
-	//static String path = "data\\newyork\\h-new-56-1.json";
+	static String path = "data\\newyork\\h-new-56-1.json";
 	//static String path = "data\\pdh\\h-pdh18-int1.json";
 
 	//static String path = "data\\pdh\\pdh18-int1-t-8-6-4-3.json";
@@ -37,12 +37,13 @@ public class App
     	*/
 		long startTime = System.currentTimeMillis();    //获取开始时间
 
-		new JsonParser().loadGAJsonData(path);
+		//new JsonParser().loadGAJsonData(path);
 		//new JsonParser().loadOplJsonData(path);
     	//new JsonParser().loadHeuJsonData(path);
     	//new JsonParser().loadHeuPlusJsonData(path);
 
-
+		new MutationTest(path).getResult();
+		
 		long endTime = System.currentTimeMillis();    //获取结束时间
 
 		System.out.println("\n程序运行时间：" + (endTime - startTime) + "ms");    //输出程序运行时间
