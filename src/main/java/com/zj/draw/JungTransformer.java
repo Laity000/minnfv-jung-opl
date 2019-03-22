@@ -61,8 +61,6 @@ public class JungTransformer {
 		}
 		return graphMap;
 
-
 	}
-
 
 }

@@ -8,10 +8,10 @@ import java.util.Map.Entry;
 
 import com.zj.util.ShortedpathSolver;
 
-public class Demand {
+public class Demand implements Comparable<Demand> {
 
 	/*
-	 * 需求id
+	 * 需求id(从1开始）
 	 */
 	private int _id;
 	/*
@@ -149,6 +149,24 @@ public class Demand {
 	public String toString() {
 		return "Demand [_id=" + _id + ", _srcNoed=" + _srcNoed + ", _destNode=" + _destNode + ", _supply=" + _supply
 				+ ", _SFC=" + _SFC + "]";
+	}
+	@Override
+	public int compareTo(Demand dem) {
+		if (this.SFCCount() < dem.SFCCount() ) {
+			return -1;
+		}else if (this.SFCCount() == dem.SFCCount()) {
+			float a = this.getNFInSFC(1).getNFcapacity();
+			float b = dem.getNFInSFC(1).getNFcapacity();
+			if (a > b) {
+				return -1;
+			}else if (a < b) {
+				return 1;
+			}else {
+				return 0;
+			}
+		}else {
+			return 1;
+		}
 	}
 
 

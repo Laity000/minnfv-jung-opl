@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ASCII"?><project>
+	<version>1.0</version>
+	<configs>
+		<config default="false" name="run1" category="opl">
+			<ref name="maxflow.mod" type="model">
+			</ref>
+			<ref name="maxflow.ops" type="setting">
+			</ref>
+			<ref name="maxflow.dat" type="data">
+			</ref>
+		</config>
+		<config default="false" name="run2" category="opl">
+			<ref name="maxflow.mod" type="model">
+			</ref>
+			<ref name="pdh/pdh42-random.dat" type="data">
+			</ref>
+		</config>
+		<config default="false" name="run3" category="opl">
+			<ref name="pdh/pdh42.dat" type="data">
+			</ref>
+			<ref name="maxflow.mod" type="model">
+			</ref>
+		</config>
+		<config default="true" name="run4" category="opl">
+			<ref name="pdh/pdh28.dat" type="data">
+			</ref>
+			<ref name="maxflow.mod" type="model">
+			</ref>
+			<ref name="maxflow.ops" type="setting">
+			</ref>
+		</config>
+	</configs>
+	
+</project>

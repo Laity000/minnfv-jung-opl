@@ -6,12 +6,12 @@ import com.zj.network.Topology;
 import com.zj.solution.Solution;
 import com.zj.solution.VM;
 
-public class Algorithm3 {
+public class Algorithm_HeuPlus {
 
 
 	public static Solution start(Topology topo, Demands dems) {
 
-		Solution solu = Algorithm.installNFC(topo, dems);
+		Solution solu = Algorithm_Heu.installNFC(topo, dems);
 		Solution preSolu = null;
 		Node banedNode = null;
 		//禁用未初始化的节点
@@ -26,12 +26,12 @@ public class Algorithm3 {
 			if (banedNode != null) {
 				topo.getNode(banedNode.getId()).setBanFlag(true);
 			}
-			preSolu = Algorithm.installNFC(topo, dems);
+			preSolu = Algorithm_Heu.installNFC(topo, dems);
 		} while (preSolu.getFlows().size() == dems.getDemands().size());
 		//回溯
 		if (banedNode != null) {
 			topo.getNode(banedNode.getId()).setBanFlag(false);
-			preSolu = Algorithm.installNFC(topo, dems);
+			preSolu = Algorithm_Heu.installNFC(topo, dems);
 		}
 		return preSolu;
 

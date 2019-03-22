@@ -309,6 +309,7 @@ public class Solution implements Comparable<Solution>{
 
 	public float getAvgSPLen() {
 		float sumSPLen = 0;
+		int sum = 0;
 		for (Flow flow : getFlows()) {
 			sumSPLen += flow.getShortedpathLength();
 		}

@@ -1,0 +1,1569 @@
+//BestObject": 35.923566667
+//Time": 59.99
+{
+ "numNodes": 11,
+ "arcs": [
+  {
+   "fromNodeID": 0,
+   "toNodeID": 8,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 0,
+   "toNodeID": 9,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 9,
+   "toNodeID": 10,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 9,
+   "toNodeID": 1,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 9,
+   "toNodeID": 2,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 9,
+   "toNodeID": 6,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 9,
+   "toNodeID": 7,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 10,
+   "toNodeID": 1,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 10,
+   "toNodeID": 2,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 10,
+   "toNodeID": 6,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 10,
+   "toNodeID": 7,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 1,
+   "toNodeID": 2,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 0,
+   "toNodeID": 6,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 1,
+   "toNodeID": 3,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 1,
+   "toNodeID": 4,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 1,
+   "toNodeID": 5,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 1,
+   "toNodeID": 7,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 2,
+   "toNodeID": 3,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 2,
+   "toNodeID": 4,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 2,
+   "toNodeID": 5,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 3,
+   "toNodeID": 4,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 3,
+   "toNodeID": 5,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 4,
+   "toNodeID": 5,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 0,
+   "toNodeID": 7,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 4,
+   "toNodeID": 6,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 4,
+   "toNodeID": 7,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 5,
+   "toNodeID": 7,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 6,
+   "toNodeID": 7,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 8,
+   "toNodeID": 9,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 8,
+   "toNodeID": 10,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 8,
+   "toNodeID": 1,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 8,
+   "toNodeID": 5,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 8,
+   "toNodeID": 6,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 8,
+   "toNodeID": 7,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 8,
+   "toNodeID": 0,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 9,
+   "toNodeID": 0,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 10,
+   "toNodeID": 9,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 1,
+   "toNodeID": 9,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 2,
+   "toNodeID": 9,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 6,
+   "toNodeID": 9,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 7,
+   "toNodeID": 9,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 1,
+   "toNodeID": 10,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 2,
+   "toNodeID": 10,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 6,
+   "toNodeID": 10,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 7,
+   "toNodeID": 10,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 2,
+   "toNodeID": 1,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 6,
+   "toNodeID": 0,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 3,
+   "toNodeID": 1,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 4,
+   "toNodeID": 1,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 5,
+   "toNodeID": 1,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 7,
+   "toNodeID": 1,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 3,
+   "toNodeID": 2,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 4,
+   "toNodeID": 2,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 5,
+   "toNodeID": 2,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 4,
+   "toNodeID": 3,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 5,
+   "toNodeID": 3,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 5,
+   "toNodeID": 4,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 7,
+   "toNodeID": 0,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 6,
+   "toNodeID": 4,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 7,
+   "toNodeID": 4,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 7,
+   "toNodeID": 5,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 7,
+   "toNodeID": 6,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 9,
+   "toNodeID": 8,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 10,
+   "toNodeID": 8,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 1,
+   "toNodeID": 8,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 5,
+   "toNodeID": 8,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 6,
+   "toNodeID": 8,
+   "capacity": 10000
+  },
+  {
+   "fromNodeID": 7,
+   "toNodeID": 8,
+   "capacity": 10000
+  }
+ ],
+ "demands": [
+  {
+   "id": 1,
+   "srcNodeID": 9,
+   "destNodeID": 2,
+   "supply": 1,
+   "SFC": [2, 1, 0]
+  },
+  {
+   "id": 2,
+   "srcNodeID": 0,
+   "destNodeID": 3,
+   "supply": 1,
+   "SFC": [1, 2, 3]
+  },
+  {
+   "id": 3,
+   "srcNodeID": 9,
+   "destNodeID": 4,
+   "supply": 1,
+   "SFC": [2, 0, 1]
+  },
+  {
+   "id": 4,
+   "srcNodeID": 2,
+   "destNodeID": 4,
+   "supply": 1,
+   "SFC": [3, 1, 2]
+  },
+  {
+   "id": 5,
+   "srcNodeID": 3,
+   "destNodeID": 10,
+   "supply": 1,
+   "SFC": [2, 1, 3]
+  },
+  {
+   "id": 6,
+   "srcNodeID": 3,
+   "destNodeID": 10,
+   "supply": 1,
+   "SFC": [1, 2, 0]
+  },
+  {
+   "id": 7,
+   "srcNodeID": 3,
+   "destNodeID": 6,
+   "supply": 1,
+   "SFC": [0, 1, 0]
+  },
+  {
+   "id": 8,
+   "srcNodeID": 10,
+   "destNodeID": 3,
+   "supply": 1,
+   "SFC": [3, 1, 2]
+  },
+  {
+   "id": 9,
+   "srcNodeID": 0,
+   "destNodeID": 4,
+   "supply": 1,
+   "SFC": [1, 2, 0]
+  },
+  {
+   "id": 10,
+   "srcNodeID": 3,
+   "destNodeID": 10,
+   "supply": 1,
+   "SFC": [1, 2, 3]
+  },
+  {
+   "id": 11,
+   "srcNodeID": 9,
+   "destNodeID": 4,
+   "supply": 1,
+   "SFC": [2, 1, 3]
+  },
+  {
+   "id": 12,
+   "srcNodeID": 2,
+   "destNodeID": 4,
+   "supply": 1,
+   "SFC": [2, 1, 0]
+  },
+  {
+   "id": 13,
+   "srcNodeID": 6,
+   "destNodeID": 3,
+   "supply": 1,
+   "SFC": [1, 3, 2]
+  },
+  {
+   "id": 14,
+   "srcNodeID": 6,
+   "destNodeID": 3,
+   "supply": 1,
+   "SFC": [2, 0, 1]
+  },
+  {
+   "id": 15,
+   "srcNodeID": 9,
+   "destNodeID": 4,
+   "supply": 1,
+   "SFC": [1, 2, 0]
+  },
+  {
+   "id": 16,
+   "srcNodeID": 10,
+   "destNodeID": 6,
+   "supply": 1,
+   "SFC": [1, 2, 3]
+  },
+  {
+   "id": 17,
+   "srcNodeID": 4,
+   "destNodeID": 10,
+   "supply": 1,
+   "SFC": [1, 2, 0]
+  },
+  {
+   "id": 18,
+   "srcNodeID": 0,
+   "destNodeID": 4,
+   "supply": 1,
+   "SFC": [2, 1, 0]
+  },
+  {
+   "id": 19,
+   "srcNodeID": 0,
+   "destNodeID": 2,
+   "supply": 1,
+   "SFC": [0, 0, 1]
+  },
+  {
+   "id": 20,
+   "srcNodeID": 0,
+   "destNodeID": 10,
+   "supply": 1,
+   "SFC": [2, 1, 0]
+  },
+  {
+   "id": 21,
+   "srcNodeID": 6,
+   "destNodeID": 2,
+   "supply": 1,
+   "SFC": [0, 1, 2]
+  },
+  {
+   "id": 22,
+   "srcNodeID": 0,
+   "destNodeID": 4,
+   "supply": 1,
+   "SFC": [2, 1, 0]
+  },
+  {
+   "id": 23,
+   "srcNodeID": 9,
+   "destNodeID": 2,
+   "supply": 1,
+   "SFC": [1, 3, 2]
+  },
+  {
+   "id": 24,
+   "srcNodeID": 9,
+   "destNodeID": 4,
+   "supply": 1,
+   "SFC": [2, 0, 1]
+  },
+  {
+   "id": 25,
+   "srcNodeID": 6,
+   "destNodeID": 3,
+   "supply": 1,
+   "SFC": [1, 0, 2]
+  },
+  {
+   "id": 26,
+   "srcNodeID": 0,
+   "destNodeID": 10,
+   "supply": 1,
+   "SFC": [3, 2, 1]
+  },
+  {
+   "id": 27,
+   "srcNodeID": 2,
+   "destNodeID": 4,
+   "supply": 1,
+   "SFC": [1, 2, 3]
+  },
+  {
+   "id": 28,
+   "srcNodeID": 9,
+   "destNodeID": 2,
+   "supply": 1,
+   "SFC": [1, 0, 0]
+  },
+  {
+   "id": 29,
+   "srcNodeID": 10,
+   "destNodeID": 3,
+   "supply": 1,
+   "SFC": [0, 0, 1]
+  },
+  {
+   "id": 30,
+   "srcNodeID": 9,
+   "destNodeID": 6,
+   "supply": 1,
+   "SFC": [0, 1, 0]
+  },
+  {
+   "id": 31,
+   "srcNodeID": 2,
+   "destNodeID": 9,
+   "supply": 1,
+   "SFC": [0, 0, 1]
+  },
+  {
+   "id": 32,
+   "srcNodeID": 6,
+   "destNodeID": 3,
+   "supply": 1,
+   "SFC": [2, 1, 0]
+  },
+  {
+   "id": 33,
+   "srcNodeID": 2,
+   "destNodeID": 0,
+   "supply": 1,
+   "SFC": [3, 2, 1]
+  },
+  {
+   "id": 34,
+   "srcNodeID": 9,
+   "destNodeID": 4,
+   "supply": 1,
+   "SFC": [2, 3, 1]
+  },
+  {
+   "id": 35,
+   "srcNodeID": 10,
+   "destNodeID": 0,
+   "supply": 1,
+   "SFC": [3, 2, 1]
+  },
+  {
+   "id": 36,
+   "srcNodeID": 2,
+   "destNodeID": 9,
+   "supply": 1,
+   "SFC": [1, 2, 3]
+  },
+  {
+   "id": 37,
+   "srcNodeID": 9,
+   "destNodeID": 4,
+   "supply": 1,
+   "SFC": [1, 3, 2]
+  },
+  {
+   "id": 38,
+   "srcNodeID": 3,
+   "destNodeID": 6,
+   "supply": 1,
+   "SFC": [0, 2, 1]
+  },
+  {
+   "id": 39,
+   "srcNodeID": 10,
+   "destNodeID": 0,
+   "supply": 1,
+   "SFC": [0, 1, 0]
+  },
+  {
+   "id": 40,
+   "srcNodeID": 3,
+   "destNodeID": 9,
+   "supply": 1,
+   "SFC": [0, 1, 0]
+  },
+  {
+   "id": 41,
+   "srcNodeID": 9,
+   "destNodeID": 2,
+   "supply": 1,
+   "SFC": [0, 2, 1]
+  },
+  {
+   "id": 42,
+   "srcNodeID": 3,
+   "destNodeID": 10,
+   "supply": 1,
+   "SFC": [0, 1, 2]
+  },
+  {
+   "id": 43,
+   "srcNodeID": 6,
+   "destNodeID": 3,
+   "supply": 1,
+   "SFC": [2, 1, 3]
+  },
+  {
+   "id": 44,
+   "srcNodeID": 3,
+   "destNodeID": 10,
+   "supply": 1,
+   "SFC": [1, 0, 0]
+  },
+  {
+   "id": 45,
+   "srcNodeID": 0,
+   "destNodeID": 4,
+   "supply": 1,
+   "SFC": [1, 2, 3]
+  },
+  {
+   "id": 46,
+   "srcNodeID": 4,
+   "destNodeID": 0,
+   "supply": 1,
+   "SFC": [0, 0, 1]
+  },
+  {
+   "id": 47,
+   "srcNodeID": 4,
+   "destNodeID": 9,
+   "supply": 1,
+   "SFC": [0, 0, 1]
+  },
+  {
+   "id": 48,
+   "srcNodeID": 6,
+   "destNodeID": 9,
+   "supply": 1,
+   "SFC": [1, 0, 2]
+  },
+  {
+   "id": 49,
+   "srcNodeID": 4,
+   "destNodeID": 9,
+   "supply": 1,
+   "SFC": [1, 3, 2]
+  },
+  {
+   "id": 50,
+   "srcNodeID": 10,
+   "destNodeID": 6,
+   "supply": 1,
+   "SFC": [0, 1, 2]
+  },
+  {
+   "id": 51,
+   "srcNodeID": 2,
+   "destNodeID": 9,
+   "supply": 1,
+   "SFC": [1, 2, 0]
+  },
+  {
+   "id": 52,
+   "srcNodeID": 6,
+   "destNodeID": 10,
+   "supply": 1,
+   "SFC": [1, 2, 3]
+  },
+  {
+   "id": 53,
+   "srcNodeID": 0,
+   "destNodeID": 3,
+   "supply": 1,
+   "SFC": [0, 0, 1]
+  },
+  {
+   "id": 54,
+   "srcNodeID": 10,
+   "destNodeID": 3,
+   "supply": 1,
+   "SFC": [2, 1, 3]
+  },
+  {
+   "id": 55,
+   "srcNodeID": 3,
+   "destNodeID": 6,
+   "supply": 1,
+   "SFC": [0, 0, 1]
+  },
+  {
+   "id": 56,
+   "srcNodeID": 9,
+   "destNodeID": 3,
+   "supply": 1,
+   "SFC": [2, 1, 3]
+  },
+  {
+   "id": 57,
+   "srcNodeID": 9,
+   "destNodeID": 2,
+   "supply": 1,
+   "SFC": [1, 0, 0]
+  },
+  {
+   "id": 58,
+   "srcNodeID": 9,
+   "destNodeID": 3,
+   "supply": 1,
+   "SFC": [1, 2, 3]
+  },
+  {
+   "id": 59,
+   "srcNodeID": 2,
+   "destNodeID": 4,
+   "supply": 1,
+   "SFC": [3, 2, 1]
+  },
+  {
+   "id": 60,
+   "srcNodeID": 4,
+   "destNodeID": 10,
+   "supply": 1,
+   "SFC": [2, 0, 1]
+  }
+ ],
+ "flows": [
+  {
+   "demandID": 1,
+   "fromNodeID": 9,
+   "toNodeID": 1
+  },
+  {
+   "demandID": 1,
+   "fromNodeID": 1,
+   "toNodeID": 2
+  },
+  {
+   "demandID": 3,
+   "fromNodeID": 9,
+   "toNodeID": 1
+  },
+  {
+   "demandID": 3,
+   "fromNodeID": 1,
+   "toNodeID": 4
+  },
+  {
+   "demandID": 4,
+   "fromNodeID": 2,
+   "toNodeID": 5
+  },
+  {
+   "demandID": 4,
+   "fromNodeID": 5,
+   "toNodeID": 4
+  },
+  {
+   "demandID": 6,
+   "fromNodeID": 3,
+   "toNodeID": 5
+  },
+  {
+   "demandID": 6,
+   "fromNodeID": 5,
+   "toNodeID": 7
+  },
+  {
+   "demandID": 6,
+   "fromNodeID": 7,
+   "toNodeID": 10
+  },
+  {
+   "demandID": 7,
+   "fromNodeID": 3,
+   "toNodeID": 5
+  },
+  {
+   "demandID": 7,
+   "fromNodeID": 8,
+   "toNodeID": 6
+  },
+  {
+   "demandID": 7,
+   "fromNodeID": 5,
+   "toNodeID": 8
+  },
+  {
+   "demandID": 9,
+   "fromNodeID": 0,
+   "toNodeID": 7
+  },
+  {
+   "demandID": 9,
+   "fromNodeID": 7,
+   "toNodeID": 4
+  },
+  {
+   "demandID": 12,
+   "fromNodeID": 2,
+   "toNodeID": 5
+  },
+  {
+   "demandID": 12,
+   "fromNodeID": 5,
+   "toNodeID": 4
+  },
+  {
+   "demandID": 15,
+   "fromNodeID": 9,
+   "toNodeID": 7
+  },
+  {
+   "demandID": 15,
+   "fromNodeID": 7,
+   "toNodeID": 4
+  },
+  {
+   "demandID": 17,
+   "fromNodeID": 4,
+   "toNodeID": 7
+  },
+  {
+   "demandID": 17,
+   "fromNodeID": 7,
+   "toNodeID": 10
+  },
+  {
+   "demandID": 18,
+   "fromNodeID": 0,
+   "toNodeID": 7
+  },
+  {
+   "demandID": 18,
+   "fromNodeID": 7,
+   "toNodeID": 4
+  },
+  {
+   "demandID": 19,
+   "fromNodeID": 1,
+   "toNodeID": 2
+  },
+  {
+   "demandID": 19,
+   "fromNodeID": 0,
+   "toNodeID": 7
+  },
+  {
+   "demandID": 19,
+   "fromNodeID": 7,
+   "toNodeID": 1
+  },
+  {
+   "demandID": 20,
+   "fromNodeID": 0,
+   "toNodeID": 8
+  },
+  {
+   "demandID": 20,
+   "fromNodeID": 8,
+   "toNodeID": 10
+  },
+  {
+   "demandID": 22,
+   "fromNodeID": 0,
+   "toNodeID": 7
+  },
+  {
+   "demandID": 22,
+   "fromNodeID": 7,
+   "toNodeID": 4
+  },
+  {
+   "demandID": 24,
+   "fromNodeID": 9,
+   "toNodeID": 1
+  },
+  {
+   "demandID": 24,
+   "fromNodeID": 1,
+   "toNodeID": 4
+  },
+  {
+   "demandID": 26,
+   "fromNodeID": 0,
+   "toNodeID": 8
+  },
+  {
+   "demandID": 26,
+   "fromNodeID": 8,
+   "toNodeID": 10
+  },
+  {
+   "demandID": 27,
+   "fromNodeID": 2,
+   "toNodeID": 5
+  },
+  {
+   "demandID": 27,
+   "fromNodeID": 5,
+   "toNodeID": 4
+  },
+  {
+   "demandID": 28,
+   "fromNodeID": 9,
+   "toNodeID": 1
+  },
+  {
+   "demandID": 28,
+   "fromNodeID": 1,
+   "toNodeID": 2
+  },
+  {
+   "demandID": 29,
+   "fromNodeID": 10,
+   "toNodeID": 1
+  },
+  {
+   "demandID": 29,
+   "fromNodeID": 1,
+   "toNodeID": 3
+  },
+  {
+   "demandID": 30,
+   "fromNodeID": 9,
+   "toNodeID": 7
+  },
+  {
+   "demandID": 30,
+   "fromNodeID": 7,
+   "toNodeID": 6
+  },
+  {
+   "demandID": 31,
+   "fromNodeID": 1,
+   "toNodeID": 9
+  },
+  {
+   "demandID": 31,
+   "fromNodeID": 2,
+   "toNodeID": 1
+  },
+  {
+   "demandID": 32,
+   "fromNodeID": 8,
+   "toNodeID": 5
+  },
+  {
+   "demandID": 32,
+   "fromNodeID": 5,
+   "toNodeID": 3
+  },
+  {
+   "demandID": 32,
+   "fromNodeID": 6,
+   "toNodeID": 8
+  },
+  {
+   "demandID": 34,
+   "fromNodeID": 9,
+   "toNodeID": 7
+  },
+  {
+   "demandID": 34,
+   "fromNodeID": 7,
+   "toNodeID": 4
+  },
+  {
+   "demandID": 39,
+   "fromNodeID": 8,
+   "toNodeID": 0
+  },
+  {
+   "demandID": 39,
+   "fromNodeID": 10,
+   "toNodeID": 8
+  },
+  {
+   "demandID": 40,
+   "fromNodeID": 1,
+   "toNodeID": 9
+  },
+  {
+   "demandID": 40,
+   "fromNodeID": 3,
+   "toNodeID": 1
+  },
+  {
+   "demandID": 41,
+   "fromNodeID": 9,
+   "toNodeID": 1
+  },
+  {
+   "demandID": 41,
+   "fromNodeID": 1,
+   "toNodeID": 2
+  },
+  {
+   "demandID": 44,
+   "fromNodeID": 3,
+   "toNodeID": 5
+  },
+  {
+   "demandID": 44,
+   "fromNodeID": 8,
+   "toNodeID": 10
+  },
+  {
+   "demandID": 44,
+   "fromNodeID": 5,
+   "toNodeID": 8
+  },
+  {
+   "demandID": 45,
+   "fromNodeID": 0,
+   "toNodeID": 8
+  },
+  {
+   "demandID": 45,
+   "fromNodeID": 8,
+   "toNodeID": 5
+  },
+  {
+   "demandID": 45,
+   "fromNodeID": 5,
+   "toNodeID": 4
+  },
+  {
+   "demandID": 46,
+   "fromNodeID": 4,
+   "toNodeID": 7
+  },
+  {
+   "demandID": 46,
+   "fromNodeID": 7,
+   "toNodeID": 0
+  },
+  {
+   "demandID": 47,
+   "fromNodeID": 4,
+   "toNodeID": 7
+  },
+  {
+   "demandID": 47,
+   "fromNodeID": 7,
+   "toNodeID": 9
+  },
+  {
+   "demandID": 48,
+   "fromNodeID": 8,
+   "toNodeID": 9
+  },
+  {
+   "demandID": 48,
+   "fromNodeID": 6,
+   "toNodeID": 8
+  },
+  {
+   "demandID": 49,
+   "fromNodeID": 4,
+   "toNodeID": 5
+  },
+  {
+   "demandID": 49,
+   "fromNodeID": 8,
+   "toNodeID": 9
+  },
+  {
+   "demandID": 49,
+   "fromNodeID": 5,
+   "toNodeID": 8
+  },
+  {
+   "demandID": 50,
+   "fromNodeID": 8,
+   "toNodeID": 6
+  },
+  {
+   "demandID": 50,
+   "fromNodeID": 10,
+   "toNodeID": 8
+  },
+  {
+   "demandID": 51,
+   "fromNodeID": 1,
+   "toNodeID": 9
+  },
+  {
+   "demandID": 51,
+   "fromNodeID": 2,
+   "toNodeID": 1
+  },
+  {
+   "demandID": 53,
+   "fromNodeID": 0,
+   "toNodeID": 8
+  },
+  {
+   "demandID": 53,
+   "fromNodeID": 8,
+   "toNodeID": 5
+  },
+  {
+   "demandID": 53,
+   "fromNodeID": 5,
+   "toNodeID": 3
+  },
+  {
+   "demandID": 57,
+   "fromNodeID": 9,
+   "toNodeID": 1
+  },
+  {
+   "demandID": 57,
+   "fromNodeID": 1,
+   "toNodeID": 2
+  },
+  {
+   "demandID": 59,
+   "fromNodeID": 2,
+   "toNodeID": 5
+  },
+  {
+   "demandID": 59,
+   "fromNodeID": 5,
+   "toNodeID": 4
+  }
+ ],
+ "tempOrdinals": [
+  {
+   "demandID": 1,
+   "nodeID": 1,
+   "NFString": "NF1",
+   "ordinal": 2
+  },
+  {
+   "demandID": 1,
+   "nodeID": 1,
+   "NFString": "NF2",
+   "ordinal": 2
+  },
+  {
+   "demandID": 3,
+   "nodeID": 1,
+   "NFString": "NF1",
+   "ordinal": 2
+  },
+  {
+   "demandID": 3,
+   "nodeID": 1,
+   "NFString": "NF3",
+   "ordinal": 2
+  },
+  {
+   "demandID": 4,
+   "nodeID": 5,
+   "NFString": "NF1",
+   "ordinal": 2
+  },
+  {
+   "demandID": 4,
+   "nodeID": 5,
+   "NFString": "NF2",
+   "ordinal": 2
+  },
+  {
+   "demandID": 4,
+   "nodeID": 5,
+   "NFString": "NF3",
+   "ordinal": 2
+  },
+  {
+   "demandID": 6,
+   "nodeID": 5,
+   "NFString": "NF1",
+   "ordinal": 2
+  },
+  {
+   "demandID": 6,
+   "nodeID": 7,
+   "NFString": "NF2",
+   "ordinal": 3
+  },
+  {
+   "demandID": 7,
+   "nodeID": 8,
+   "NFString": "NF2",
+   "ordinal": 10
+  },
+  {
+   "demandID": 9,
+   "nodeID": 7,
+   "NFString": "NF1",
+   "ordinal": 10
+  },
+  {
+   "demandID": 9,
+   "nodeID": 7,
+   "NFString": "NF2",
+   "ordinal": 10
+  },
+  {
+   "demandID": 12,
+   "nodeID": 5,
+   "NFString": "NF1",
+   "ordinal": 2
+  },
+  {
+   "demandID": 12,
+   "nodeID": 5,
+   "NFString": "NF2",
+   "ordinal": 2
+  },
+  {
+   "demandID": 15,
+   "nodeID": 7,
+   "NFString": "NF1",
+   "ordinal": 2
+  },
+  {
+   "demandID": 15,
+   "nodeID": 7,
+   "NFString": "NF2",
+   "ordinal": 2
+  },
+  {
+   "demandID": 17,
+   "nodeID": 7,
+   "NFString": "NF1",
+   "ordinal": 2
+  },
+  {
+   "demandID": 17,
+   "nodeID": 7,
+   "NFString": "NF2",
+   "ordinal": 2
+  },
+  {
+   "demandID": 18,
+   "nodeID": 7,
+   "NFString": "NF1",
+   "ordinal": 2
+  },
+  {
+   "demandID": 18,
+   "nodeID": 7,
+   "NFString": "NF2",
+   "ordinal": 2
+  },
+  {
+   "demandID": 19,
+   "nodeID": 1,
+   "NFString": "NF3",
+   "ordinal": 3
+  },
+  {
+   "demandID": 20,
+   "nodeID": 8,
+   "NFString": "NF1",
+   "ordinal": 2
+  },
+  {
+   "demandID": 20,
+   "nodeID": 8,
+   "NFString": "NF2",
+   "ordinal": 2
+  },
+  {
+   "demandID": 22,
+   "nodeID": 7,
+   "NFString": "NF1",
+   "ordinal": 2
+  },
+  {
+   "demandID": 22,
+   "nodeID": 7,
+   "NFString": "NF2",
+   "ordinal": 2
+  },
+  {
+   "demandID": 24,
+   "nodeID": 1,
+   "NFString": "NF1",
+   "ordinal": 2
+  },
+  {
+   "demandID": 24,
+   "nodeID": 1,
+   "NFString": "NF3",
+   "ordinal": 2
+  },
+  {
+   "demandID": 26,
+   "nodeID": 8,
+   "NFString": "NF1",
+   "ordinal": 2
+  },
+  {
+   "demandID": 26,
+   "nodeID": 8,
+   "NFString": "NF2",
+   "ordinal": 2
+  },
+  {
+   "demandID": 26,
+   "nodeID": 8,
+   "NFString": "NF3",
+   "ordinal": 2
+  },
+  {
+   "demandID": 27,
+   "nodeID": 5,
+   "NFString": "NF1",
+   "ordinal": 2
+  },
+  {
+   "demandID": 27,
+   "nodeID": 5,
+   "NFString": "NF2",
+   "ordinal": 2
+  },
+  {
+   "demandID": 27,
+   "nodeID": 5,
+   "NFString": "NF3",
+   "ordinal": 2
+  },
+  {
+   "demandID": 28,
+   "nodeID": 1,
+   "NFString": "NF1",
+   "ordinal": 2
+  },
+  {
+   "demandID": 29,
+   "nodeID": 1,
+   "NFString": "NF3",
+   "ordinal": 2
+  },
+  {
+   "demandID": 30,
+   "nodeID": 7,
+   "NFString": "NF2",
+   "ordinal": 2
+  },
+  {
+   "demandID": 31,
+   "nodeID": 1,
+   "NFString": "NF3",
+   "ordinal": 10
+  },
+  {
+   "demandID": 32,
+   "nodeID": 8,
+   "NFString": "NF1",
+   "ordinal": 2
+  },
+  {
+   "demandID": 32,
+   "nodeID": 8,
+   "NFString": "NF2",
+   "ordinal": 2
+  },
+  {
+   "demandID": 34,
+   "nodeID": 7,
+   "NFString": "NF1",
+   "ordinal": 2
+  },
+  {
+   "demandID": 34,
+   "nodeID": 7,
+   "NFString": "NF2",
+   "ordinal": 2
+  },
+  {
+   "demandID": 34,
+   "nodeID": 7,
+   "NFString": "NF3",
+   "ordinal": 2
+  },
+  {
+   "demandID": 39,
+   "nodeID": 8,
+   "NFString": "NF2",
+   "ordinal": 2
+  },
+  {
+   "demandID": 40,
+   "nodeID": 1,
+   "NFString": "NF2",
+   "ordinal": 2
+  },
+  {
+   "demandID": 41,
+   "nodeID": 1,
+   "NFString": "NF2",
+   "ordinal": 2
+  },
+  {
+   "demandID": 41,
+   "nodeID": 1,
+   "NFString": "NF3",
+   "ordinal": 2
+  },
+  {
+   "demandID": 44,
+   "nodeID": 8,
+   "NFString": "NF1",
+   "ordinal": 3
+  },
+  {
+   "demandID": 45,
+   "nodeID": 5,
+   "NFString": "NF3",
+   "ordinal": 3
+  },
+  {
+   "demandID": 45,
+   "nodeID": 8,
+   "NFString": "NF1",
+   "ordinal": 2
+  },
+  {
+   "demandID": 45,
+   "nodeID": 8,
+   "NFString": "NF2",
+   "ordinal": 2
+  },
+  {
+   "demandID": 46,
+   "nodeID": 7,
+   "NFString": "NF3",
+   "ordinal": 2
+  },
+  {
+   "demandID": 47,
+   "nodeID": 7,
+   "NFString": "NF3",
+   "ordinal": 2
+  },
+  {
+   "demandID": 48,
+   "nodeID": 8,
+   "NFString": "NF1",
+   "ordinal": 2
+  },
+  {
+   "demandID": 48,
+   "nodeID": 8,
+   "NFString": "NF3",
+   "ordinal": 2
+  },
+  {
+   "demandID": 49,
+   "nodeID": 5,
+   "NFString": "NF1",
+   "ordinal": 2
+  },
+  {
+   "demandID": 49,
+   "nodeID": 5,
+   "NFString": "NF3",
+   "ordinal": 2
+  },
+  {
+   "demandID": 49,
+   "nodeID": 8,
+   "NFString": "NF2",
+   "ordinal": 3
+  },
+  {
+   "demandID": 50,
+   "nodeID": 8,
+   "NFString": "NF2",
+   "ordinal": 2
+  },
+  {
+   "demandID": 50,
+   "nodeID": 8,
+   "NFString": "NF3",
+   "ordinal": 2
+  },
+  {
+   "demandID": 51,
+   "nodeID": 1,
+   "NFString": "NF1",
+   "ordinal": 2
+  },
+  {
+   "demandID": 51,
+   "nodeID": 1,
+   "NFString": "NF2",
+   "ordinal": 2
+  },
+  {
+   "demandID": 53,
+   "nodeID": 5,
+   "NFString": "NF3",
+   "ordinal": 3
+  },
+  {
+   "demandID": 57,
+   "nodeID": 1,
+   "NFString": "NF1",
+   "ordinal": 2
+  },
+  {
+   "demandID": 59,
+   "nodeID": 5,
+   "NFString": "NF1",
+   "ordinal": 10
+  },
+  {
+   "demandID": 59,
+   "nodeID": 5,
+   "NFString": "NF2",
+   "ordinal": 10
+  },
+  {
+   "demandID": 59,
+   "nodeID": 5,
+   "NFString": "NF3",
+   "ordinal": 10
+  }
+ ]
+}

@@ -17,7 +17,7 @@ import com.zj.solution.VM;
 import com.zj.solution.VM.SFentry;
 import com.zj.util.AllpathSolver;
 
-public class Algorithm {
+public class Algorithm_Heu {
 
 
 	public static Solution installNFC(Topology topo, Demands demands) {

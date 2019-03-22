@@ -8,6 +8,8 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.concurrent.ThreadFactory;
+
 import com.zj.data.JsonParser;
 import com.zj.solution.Solution;
 
@@ -32,6 +34,8 @@ public class MutationTest {
         }
         // 关闭线程池
         pool.shutdown();
+        ExecutorService ex = Executors.newCachedThreadPool();
+        
 	}
 		
 

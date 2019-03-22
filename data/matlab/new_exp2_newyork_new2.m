@@ -37,7 +37,7 @@ y3_4 = [2.63 2.50 2.50 2.34 2.50 2.50 2.50 2.50 2.34 2.50 2.63 2.63 2.63 2.50 2.
 
 
 axes(ha(1));
-plot(x,y1_3,'co-',x,y1_2,'m*-',x,y1_1,'rx-')
+plot(x,y1_3,'kd-',x,y1_2,'m+-',x,y1_1,'r*-')
 legend('VNF-OP','HEU','GA'); legend boxoff
 xlabel('时间（天）');
 ylabel('激活成本');
@@ -50,14 +50,14 @@ aVM = 165.9;
 
 axes(ha(2));
 %plot(x,y2_1 * aVM / 1000,'r*-',x,y2_2 * aVM / 1000,'cd-')
-plot(x,(y1_3 * aPM +y2_3 * aVM) / 1000,'co-',x,(y1_2 * aPM +y2_2 * aVM) / 1000,'m*-',x,(y1_1 * aPM + y2_1 * aVM) / 1000,'rx-')
+plot(x,(y1_3 * aPM +y2_3 * aVM) / 1000,'kd-',x,(y1_2 * aPM +y2_2 * aVM) / 1000,'m+-',x,(y1_1 * aPM + y2_1 * aVM) / 1000,'r*-')
 legend('VNF-OP','HEU','GA'); legend boxoff  
 xlabel('时间（天）');
-ylabel('能耗成本(KW)');
+ylabel('能耗成本(kW)');
 
 
 axes(ha(3));
-plot(x,y3_3 / 1.78,'co-',x,y3_2 / 1.78,'m*-',x,y3_1 / 1.78,'rx-')
+plot(x,y3_3 / 1.78,'kd-',x,y3_2 / 1.78,'m+-',x,y3_1 / 1.78,'r*-')
 legend('VNF-OP','HEU','GA');   legend boxoff
 xlabel('时间（天）');
 ylabel('传输成本');

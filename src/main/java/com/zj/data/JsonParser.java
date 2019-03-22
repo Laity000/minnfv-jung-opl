@@ -12,8 +12,9 @@ import com.zj.data.JsonBean.JsonTempOrdinal;
 import com.zj.draw.JungDrawer;
 import com.zj.draw.JungTransformer;
 import com.zj.ga.GAsolver;
-import com.zj.heuristic.Algorithm;
-import com.zj.heuristic.Algorithm3;
+import com.zj.heuristic.Algorithm_Heu;
+import com.zj.heuristic.Algorithm_HeuPlus;
+import com.zj.heuristic.Algorithm_Throughput;
 import com.zj.network.Demand;
 import com.zj.network.Demands;
 import com.zj.network.Link;
@@ -24,6 +25,7 @@ import com.zj.solution.Flow;
 import com.zj.solution.Solution;
 import com.zj.solution.VM;
 import com.zj.solution.VM.SFentry;
+import com.zj.test.Test1;
 import com.zj.util.AllpathSolver;
 
 /**
@@ -55,7 +57,7 @@ public class JsonParser {
 
 		//Algorithm.banVMs(topology, new int[]{0,1,2,3,4,5,6,7,8,10});
 
-		Solution solution =Algorithm.installNFC(topology, demands);
+		Solution solution =Algorithm_Heu.installNFC(topology, demands);
 		//Solution solution = Algorithm3.start(topology, demands);
 		//Solution solution = new GAsolver(topology, demands).run();
 		showGraph(topology, solution);
@@ -94,7 +96,7 @@ public class JsonParser {
 		Topology topology = parseTopo(jsonBean);
 		Demands demands = parseDems(jsonBean, topology);
 
-		Solution solution = Algorithm3.start(topology, demands);
+		Solution solution = Algorithm_HeuPlus.start(topology, demands);
 
 		showGraph(topology, solution);
 		printInfo(topology, demands, solution);
@@ -166,6 +168,33 @@ public class JsonParser {
 		//Algorithm.getIdleSFsList(0, 3);
 
 	}
+	
+	public void loadThroughputJsonData(String pathname) {
+		Gson gson = new Gson();
+		JsonReader reader;
+		JsonBean jsonBean = null;
+		try {
+
+			reader = new JsonReader(new FileReader(pathname));
+		    jsonBean = gson.fromJson(reader, JsonBean.class);
+
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+			System.err.println("json文件导入有误！请检查文件地址。");
+		}
+
+		Topology topology = parseTopo(jsonBean);
+		Demands demands = parseDems(jsonBean, topology);
+
+
+		//int leng = Test1.getlengh(topology, demands);
+		//System.out.println("\n\n" + leng);
+
+		Solution solution = Algorithm_Throughput.installNFC(topology, demands);
+		showGraph(topology, solution);
+		printInfo(topology, demands, solution);
+		
+	}
 
 	private Topology parseTopo(JsonBean jsonBean){
 		/*
@@ -216,13 +245,18 @@ public class JsonParser {
 		 * 新建解决方案
 		 */
 		Solution solution = new Solution(soluname, demands.demandsCount());
-		//新建流,添加流的需求信息
-		for(Demand demand : demands.getDemands()){
-			solution.newFlow(demand.getId(), demand.getSrcNoed(),
-					demand.getDestNode(), demand.getSupply(), demand.getShortedpathLength());
-		}
-		//添加流的路径信息(这里的jsonflow是链路形式)
+		
+		
 		for(JsonFlow jsonFlow : jsonBean.getFlows()){
+			int demandid = jsonFlow.getDemandID();
+			//新建流,添加流的需求信息	
+			if (!solution.containsFlow(demandid)) {
+				Demand demand = demands.getDemand(demandid);
+				solution.newFlow(demand.getId(), demand.getSrcNoed(),
+					demand.getDestNode(), demand.getSupply(), demand.getShortedpathLength());
+			}
+			
+			//添加流的路径信息(这里的jsonflow是链路形式)
 			int fromid = jsonFlow.getFromNodeID();
 			int toid = jsonFlow.getToNodeID();
 			Link path = topology.getLink(fromid, toid);
@@ -282,7 +316,7 @@ public class JsonParser {
 		*/
 		for(Demand dem : demands.getDemands()){
 			Flow flow = solution.getFlow(dem.getId());
-			if (flow == null) {
+			if (flow == null || flow.getNFC().isEmpty()) {
 				System.out.println("Flow [_id=" + dem.getId() +
 						" ,_src/dest=" + dem.getSrcNoed().getId() + "/" + dem.getDestNode().getId() +
 						" ,_spLen="+ dem.getShortedpathLength() + "] is null!");

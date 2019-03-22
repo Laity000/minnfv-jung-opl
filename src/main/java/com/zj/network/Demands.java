@@ -120,8 +120,4 @@ public class Demands {
 		return demand;
 
 	}
-
-
-
-
 }

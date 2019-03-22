@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-import com.zj.heuristic.Algorithm;
+import com.zj.heuristic.Algorithm_Heu;
 import com.zj.network.Demands;
 import com.zj.network.Node;
 import com.zj.network.Topology;
@@ -187,7 +187,7 @@ public class GAsolver {
 					node.setBanFlag(false);
 				}
 			}
-			Solution solu = Algorithm.installNFC(topo, dems);
+			Solution solu = Algorithm_Heu.installNFC(topo, dems);
 			return solu;
 		}
 	}

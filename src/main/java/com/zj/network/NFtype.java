@@ -2,8 +2,9 @@ package com.zj.network;
 
 public enum NFtype {
 	NF1(0, "Firewall", 6), NF2(1, "IDS", 4), NF3(2, "Proxy", 3),
-	NF4(3, "NAT", 4), NF5(4, "LB", 5), NF6(5, "FM", 6);
-	
+	NF4(3, "NAT", 8), NF5(4, "LB", 12), NF6(5, "FM", 0);
+	//NF1(0, "Firewall", 5), NF2(1, "IDS", 5), NF3(2, "Proxy", 5),
+	//NF4(3, "NAT", 5), NF5(4, "LB", 5), NF6(5, "FM", 5);
 
 	private int _index;
 	
